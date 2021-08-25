@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Mini Project 1</title>
+</head>
+<body>
+  <section class="showcase ">
+    <header>
+      <h2 class="logo">Parallel Bliss</h2>
+      <div class="toggle ">
+
+      </div>
+    </header>
+    <video src="Images/video.mp4" muted loop autoplay></video>
+
+    <div class="overlay"></div>
+
+    <div class="text">
+      <h2>Magic is Books</h2>
+      <h3>Explore The Fantasy</h3>
+      <p>“Fantasy is escapist, and that is its glory. 
+        If a soldier is imprisioned by the enemy, 
+        don't we consider it his duty to escape?
+        If we value the freedom of mind and soul,if we're partisans of liberty, 
+        then it's our plain duty to escape, and 
+        to take as many people with us as we can!”
+      </p>
+      <a href="#">Explore</a>
+    </div>
+
+    <ul class="social">
+      <li><a href="#"><img src="Images/facebook2.png" alt=""></a></li>
+      <li><a href="#"><img src="Images/twitter2.png" alt=""></a></li>
+      <li><a href="#"><img src="Images/instagram2.png" alt=""></a></li>
+    </ul>
+  </section>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <script>
+    const menuToggle= document.querySelector('.toggle')
+    const showcase= document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click',()=>{
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
+</body>
+</html>
